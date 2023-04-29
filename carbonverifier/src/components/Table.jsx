@@ -1,12 +1,10 @@
 import Menu from "../components/Menu";
-import Table from "../components/Table";
 
-
-export default function Ranking() {
+export default function Table() {
     return (
         <div className="h-screen w-full bg-background">
-            <Menu/>
-            <Table />
+            
+            <h1>lelelelledklasmdklasmdklasdmklasmd</h1>
         </div>
     )
 }
