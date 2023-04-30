@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/ranking" element={<Ranking />} />
         <Route path="/admin" element={<Admin />} />
-        <Route path="/buycvt" element={<BuyCVT />} />
+        <Route path="/swap" element={<BuyCVT />} />
       </Routes>
     </Router>
     </WalletContext.Provider>
