@@ -44,7 +44,6 @@ export default function TableAdmin() {
 
                 </div>            
 
-
             </div>
         </div>
     )
