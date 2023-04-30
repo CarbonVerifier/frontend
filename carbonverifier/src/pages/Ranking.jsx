@@ -1,5 +1,6 @@
 import Menu from "../components/Menu";
-import Table from "../components/Table";
+import TableRanking from "../components/TableRanking";
+import BackgroundGlobe from "../components/BackgroundGlobe";
 
 
 export default function Ranking() {
@@ -7,7 +8,8 @@ export default function Ranking() {
         <div className="h-screen w-full bg-background">
             <Menu/>
             <p className="pt-32 pl-8 font-montserrat text-white	text-2xl font-bold"> Top CVT Buyers</p>
-            <Table />
+            <TableRanking />
+            <BackgroundGlobe />
         </div>
     )
 }

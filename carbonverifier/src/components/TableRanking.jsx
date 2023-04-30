@@ -1,4 +1,4 @@
-import Menu from "../components/Menu";
+import Menu from "./Menu";
 import GerdauLogo from "../assets/gerdau.png"
 export default function Table() {
     return (
