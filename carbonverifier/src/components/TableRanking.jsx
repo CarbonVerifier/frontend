@@ -1,7 +1,26 @@
-import Menu from "./Menu";
+
 import GerdauLogo from "../assets/gerdau.png"
+import FaberLogo from "../assets/FaberCastell.png"
+import KlabinLogo from "../assets/Klabin.png"
+import UnileverLogo from "../assets/Unilever.png"
+import ValeLogo from "../assets/Vale.png"
+import ItemTableRanking from "./ItemTableRanking"
+
+
 export default function Table() {
+    
+       
+    const items = [{logo: GerdauLogo, position: '1º', name: 'Gerdau S.A.', cvt: '999 CVT'},
+                   {logo: FaberLogo, position: '2º', name: 'Faber Castell', cvt: '998 CVT'},
+                   {logo: KlabinLogo, position: '3º', name: 'Klabin S.A.', cvt: '996 CVT'},
+                   {logo: UnileverLogo, position: '4º', name: 'Unilever', cvt: '990 CVT'}]
+
+    const listItems = items.map(item => (
+        <ItemTableRanking logo={item.logo} name={item.name} position={item.position} cvt={item.cvt} />
+      ));
+
     return (
+        
         <div className="h-screen w-full bg-background">
         
             
@@ -9,47 +28,7 @@ export default function Table() {
 
                 <div className="h-0.5"></div>
 
-
-                <div className="w-auto h-16 bg-gray-table-topic rounded-md my-4 mx-4 container flex flex-row items-center justify-between">
-                    <h1 className='font-montserrat font-bold px-16 text-white' >1º</h1>
-                    <img src={GerdauLogo} alt="Gerdau Logo" className='w-32' />
-                    <h1 className='font-montserrat font-bold px-16 text-white' >Gerdau S.A.</h1>
-                    <h1 className='font-montserrat font-bold px-16 text-white' >999 CVT</h1>
-                </div>
-
-                <div className="w-auto h-16 bg-gray-table-topic rounded-md my-4 mx-4 container flex flex-row items-center justify-between">
-                    <h1 className='font-montserrat font-bold px-16 text-white' >1º</h1>
-                    <img src={GerdauLogo} alt="Gerdau Logo" className='w-32' />
-                    <h1 className='font-montserrat font-bold px-16 text-white' >Gerdau S.A.</h1>
-                    <h1 className='font-montserrat font-bold px-16 text-white' >999 CVT</h1>
-                </div>
-
-                <div className="w-auto h-16 bg-gray-table-topic rounded-md my-4 mx-4 container flex flex-row items-center justify-between">
-                    <h1 className='font-montserrat font-bold px-16 text-white' >1º</h1>
-                    <img src={GerdauLogo} alt="Gerdau Logo" className='w-32' />
-                    <h1 className='font-montserrat font-bold px-16 text-white' >Gerdau S.A.</h1>
-                    <h1 className='font-montserrat font-bold px-16 text-white' >999 CVT</h1>
-                </div>
-
-                <div className="w-auto h-16 bg-gray-table-topic rounded-md my-4 mx-4 container flex flex-row items-center justify-between">
-                    <h1 className='font-montserrat font-bold px-16 text-white' >1º</h1>
-                    <img src={GerdauLogo} alt="Gerdau Logo" className='w-32' />
-                    <h1 className='font-montserrat font-bold px-16 text-white' >Gerdau S.A.</h1>
-                    <h1 className='font-montserrat font-bold px-16 text-white' >999 CVT</h1>
-                </div>
-
-                <div className="w-auto h-16 bg-gray-table-topic rounded-md my-4 mx-4 container flex flex-row items-center justify-between">
-                    <h1 className='font-montserrat font-bold px-16 text-white' >1º</h1>
-                    <img src={GerdauLogo} alt="Gerdau Logo" className='w-32' />
-                    <h1 className='font-montserrat font-bold px-16 text-white' >Gerdau S.A.</h1>
-                    <h1 className='font-montserrat font-bold px-16 text-white' >999 CVT</h1>
-                </div>
-
-                
-                
-                
-
-
+                {listItems}
                 
             </div>
         </div>
