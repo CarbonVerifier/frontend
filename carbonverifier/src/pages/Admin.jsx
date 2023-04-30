@@ -2,7 +2,7 @@ import Menu from "../components/Menu";
 import TableAdmin from "../components/TableAdmin";
 
 
-export default function Ranking() {
+export default function Admin() {
     return (
         <div className="h-screen w-full bg-background">
             <Menu/>
