@@ -19,7 +19,7 @@ export default function Menu() {
       <div className="flex justify-between items-center gap-10">
         <img src={logo} alt="Carbon Verifier Logo" className="w-14" />
         <Link to={"/"}>Home</Link>
-        <Link to={"/"}>Swap</Link>
+        <Link to={"/swap"}>Swap</Link>
         <Link to={"/ranking"}>Top Buyers</Link>
         <Link to={"/admin"}>Admin</Link>
       </div>
