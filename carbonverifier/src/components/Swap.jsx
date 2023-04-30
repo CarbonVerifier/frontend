@@ -50,7 +50,7 @@ export default function Swap() {
                     </select>
                     <p>TO</p>
                     <div className="bg-[#414141] py-2 px-4 rounded-md">
-                        CFV
+                        OCT
                     </div>
                 </div>
 
