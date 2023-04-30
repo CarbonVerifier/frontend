@@ -11,6 +11,8 @@ export default {
     extend: {
       colors: {
         'background': '#1E1E1E',
+        'gray-table': '#414141',
+        'gray-table-topic': '#6f6f6f',
       }
     },
   },
