@@ -68,13 +68,15 @@ export default function Modal({ setIsOpen }) {
       <div className="bg-background rounded-lg p-6 w-96">
         <h2 className="text-lg font-bold mb-4">Connect your wallet...</h2>
         <div className="flex flex-col justify-start font-regular">
-          <button onClick={connectWallet}>with Metamask</button>
+          <button className="bg-gradient-to-r from-[#414141] to-[#1f1f1f] 
+                text-white py-2 px-4 rounded-md mb-4" onClick={connectWallet}>Metamask wallet</button>
           <div
             onClick={connectInch}
             className="flex flex-col justify-start font-regular"
           >
-            <button id="load_and_show_qr" onClick={loadAndShow}>
-              Connect with 1inch wallet
+            <button className="bg-gradient-to-r from-[#414141] to-[#1f1f1f] 
+                text-white py-2 px-4 rounded-md" id="load_and_show_qr" onClick={loadAndShow}>
+              1inch wallet
             </button>
           </div>
         </div>
