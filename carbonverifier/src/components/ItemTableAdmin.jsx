@@ -1,9 +1,9 @@
 export default function ItemTableAdmin(props) {
 	const changeState = (props) => {
 		if (props.payload.includes('exceeded')) {
-			return 'bg-green-600 mx-8 px-16 py-4 rounded-full';
+			return 'bg-green-600 mx-8 py-4 rounded-full font-montserrat font-bold px-1 text-white';
 		} else {
-			return 'bg-red-600 mx-8 px-16 py-4 rounded-full';
+			return 'bg-red-600 mx-8 py-4 rounded-full font-montserrat font-bold px-1 text-white';
 		}
 	};
 
@@ -14,7 +14,7 @@ export default function ItemTableAdmin(props) {
 			<h1 className="font-montserrat font-bold px-16 text-white">{props.date}</h1>
 			<h1 className="font-montserrat font-bold px-16 text-white">{props.address}</h1>
 			<h1 className="font-montserrat font-bold px-16 text-white">{props.payload}</h1>
-			<div className={changeState(props)}></div>
+			<div className={changeState(props)}>{props.payload.includes('exceeded') ? 'Regular' : 'Irregular'}</div>
 		</div>
 	);
 }
