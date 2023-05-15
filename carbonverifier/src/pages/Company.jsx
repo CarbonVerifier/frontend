@@ -8,7 +8,6 @@ export default function Company() {
         <div className="h-screen w-full bg-background">
             <Menu />
             <CompanyDetails/>
-            <BackgroundGlobe/>
         </div>
     )
 }
