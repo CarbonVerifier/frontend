@@ -1,10 +1,23 @@
-import { useNavigate } from 'react-router-dom'
 import Gerdau from '../assets/gerdau.png'
 import logo from '../assets/logo.svg'
 import toucan from '../assets/toucan.png'
+import ToucanClient from "toucan-sdk";
+import { ethers } from "ethers";
+import { useState } from 'react';
 
 export default function CompanyDetails() {
-    const navigate = useNavigate()
+    
+    // const provider = new ethers.providers.Web3Provider(window.ethereum);
+    // const signer = provider.getSigner();
+    // const toucan = new ToucanClient("alfajores", provider, signer);
+
+    const [company, setCompany] = useState(null);
+    const [companyID, setCompanyID] = useState(null);
+    const [country, setCountry] = useState(null);
+
+    const [carbonEmitted, setCarbonEmitted] = useState(null);
+    const [carbonTokens, setCarbonTokens] = useState(null);
+
 
     return (
         <div className="pt-32 px-10">
