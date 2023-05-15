@@ -2,8 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { createContext, useState } from 'react'
 import Home from './pages/Home'
 import Ranking from './pages/Ranking'
-import Admin from './pages/Admin'
-import BuyCVT from './pages/BuyCVT'
 
 export const WalletContext = createContext(); 
 
@@ -15,9 +13,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ranking" element={<Ranking />} />
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/swap" element={<BuyCVT />} />
+        <Route path="/companies" element={<Ranking />} />
       </Routes>
     </Router>
     </WalletContext.Provider>
