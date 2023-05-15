@@ -1,7 +1,7 @@
 import Gerdau from '../assets/gerdau.png'
 import logo from '../assets/logo.svg'
 import toucan from '../assets/toucan.png'
-import ToucanClient from "toucan-sdk";
+import { ToucanClient } from "toucan-sdk";
 import { ethers } from "ethers";
 import { useState } from 'react';
 
