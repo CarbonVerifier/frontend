@@ -14,7 +14,7 @@ export default function HomeCards() {
       }, [texts.length]);
     return (
         <div className="flex absolute text-white gap-20 pb-40 items-baseline">
-                <HighlightCard value={897000} text={'carbon tokens minted'}/>
+                <HighlightCard value={897000} text={'offset carbons'}/>
                 <p className="text-5xl">=</p>
                 <HighlightCard value={values[index]} text={texts[index]}/>
             </div>
