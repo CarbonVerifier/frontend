@@ -3,11 +3,15 @@ import { useState } from "react";
 import logo from "../assets/logo.svg";
 import { useContext } from "react";
 import { WalletContext } from "../App";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Menu() {
   const { 
     walletAddress, setWalletAddress, isConnected, setIsConnected 
   } = useContext(WalletContext);
+
+  const navigate = useNavigate();
 
   const { ethereum } = window;
 
@@ -39,7 +43,7 @@ export default function Menu() {
   }
 
   function accessMyPage() {
-    alert("My page");
+    navigate("/company");
   }
 
   return (
@@ -47,7 +51,7 @@ export default function Menu() {
       <div className="flex justify-between items-center gap-10">
         <img src={logo} alt="Carbon Verifier Logo" className="w-14" />
         <Link to={"/"}>Home</Link>
-        <Link to={"/ranking"}>Companies</Link>
+        <Link to={"/companies"}>Companies</Link>
       </div>
       <div className="flex justify-between">
         <button
