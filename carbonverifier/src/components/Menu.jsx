@@ -59,7 +59,7 @@ export default function Menu() {
                 text-white py-2 px-4 rounded-md"
           onClick={() => isConnected ? accessMyPage() : connectWallet()}
         >
-          {isConnected ? "Connected" : "Connect wallet"}
+          {isConnected ? "My company" : "Connect wallet"}
         </button>
       </div>
     </div>

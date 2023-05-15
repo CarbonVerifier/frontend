@@ -7,9 +7,9 @@ import { useState } from 'react';
 
 export default function CompanyDetails() {
     
-    // const provider = new ethers.providers.Web3Provider(window.ethereum);
-    // const signer = provider.getSigner();
-    // const toucan = new ToucanClient("alfajores", provider, signer);
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = provider.getSigner();
+    const toucan = new ToucanClient("alfajores", provider, signer);
 
     const [company, setCompany] = useState(null);
     const [companyID, setCompanyID] = useState(null);
@@ -37,7 +37,7 @@ export default function CompanyDetails() {
                     </div>
                     <div className="flex flex-col w-1/2 rounded-md gap-2 justify-between ">
                         <div className=' bg-gray-table-topic rounded-md h-1/2 px-2 pt-2 flex flex-col gap-3'>
-                            <h2 className='font-montserrat font-bold text-white text-xl'>Carbon emitted</h2>
+                            <h2 className='font-montserrat font-bold text-white text-xl'>Carbons emitted</h2>
                             <h2 className='font-montserrat font-bold text-white text-2xl self-center'>XX</h2>
                             <button className=' bg-gray-table flex gap-2 py-2 px-2 rounded-md items-center w-36 justify-center self-center'>
                                 <img src={toucan} className='w-6'></img>

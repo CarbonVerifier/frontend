@@ -11,7 +11,6 @@ export default function Ranking() {
                 <input></input>
             </div>
             <TableRanking />
-            <Globe />
         </div>
     )
 }
